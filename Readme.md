@@ -3,7 +3,7 @@ This guide explains how to set up, run, and redeploy the Laravel 7.x Ecommerce p
 
 ##### 🚀 How to Start the Project
 - Clone or copy the project to any machine.
-- run locally 
+- run locally - not only for docker
 ```
 php artisan migrate
 php artisan db:seed
@@ -11,7 +11,7 @@ php artisan key:generate
 php artisan serve
 ```
 
-- In the project directory, run:
+- In the project directory, run: - this for docker
 
 ```
 docker compose build 
@@ -21,7 +21,7 @@ docker compose up -d
 ```
 - On first run, enter the container and set up Laravel:
 ```
-docker exec -it simple-laravel-ecommerce-app-1 bash
+docker exec -it simple-laravel-online-shop-app-1 bash
 php artisan migrate
 ```
 ##### 🧹 Cleanup and Rebuild
